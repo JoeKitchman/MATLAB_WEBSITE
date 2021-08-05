@@ -8,11 +8,15 @@
     <title>MATLAB Website</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
-    <div class="navbar">
-        <a href="pages/MATLAB/MATLABLanding.html">MATLAB</a>
+    <div id="header">
+    </div>
+
+    <div id="navbar">
     </div>
 
     <div class="content">
@@ -22,3 +26,13 @@
 </body>
 
 </html>
+
+<script>
+    $(function () {
+        $("#navbar").load("../../components/navbar.html");
+    });
+
+    $(function () {
+        $("#header").load("../../components/header.html");
+    });
+</script>
