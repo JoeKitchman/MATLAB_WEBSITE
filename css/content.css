@@ -1,0 +1,15 @@
+.content {
+    margin-left: 250px;
+  }
+
+.intro{ 
+    margin-top: 50px;
+    margin-right: 50px;
+    padding-left: 20px;
+    height : 100px;
+    background-color: #edf5e1;
+}
+
+.video{
+    text-align: center;
+}
