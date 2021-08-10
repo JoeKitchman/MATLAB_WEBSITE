@@ -17,16 +17,26 @@ body {
 }
 
 /* Side navigation links */
-.list a {
+.list .main a {
   color: #EDF5E1;
+  font-size: 24px;
   padding: 16px;
+  text-decoration:underline;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+} 
+
+.list .sub a{
+  color: #EDF5E1;
+  padding: 12px;
   text-decoration:none;
   display: block;
   text-align: center;
 }
-
 /* Change color on hover */
 .list a:hover {
   background-color: #379683;
   color: #EDF5E1;
 }
+

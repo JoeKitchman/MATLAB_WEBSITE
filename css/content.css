@@ -1,15 +1,24 @@
 .content {
     margin-left: 250px;
+    margin-bottom: 50px;
   }
 
 .intro{ 
-    margin-top: 50px;
+    margin-top: 1%;
     margin-right: 50px;
     padding-left: 20px;
-    height : 100px;
     background-color: #edf5e1;
+    padding:6px;
 }
 
 .video{
     text-align: center;
+}
+
+.explanation{ 
+    margin-top: 1%;
+    margin-right: 50px;
+    padding-left: 20px;
+    background-color: #edf5e1;
+    padding:6px;
 }
