@@ -1,12 +1,10 @@
 body {  
-    background-color: #5cdb95;
+    /*background-color: #5cdb95;*/
+    background-image: linear-gradient(#f37287, #e8b750);
     margin-top: 200px;
     font-family: Arial, Helvetica, sans-serif;
     /*Hides bottom scroll bar*/
     overflow-x: hidden
 }
 
-h1 {
-    color: #edf5e1;
-    margin-left: 20px;
-  }
+
