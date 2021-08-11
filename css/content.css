@@ -3,8 +3,18 @@
     margin-bottom: 50px;
   }
 
-.intro{ 
+.title{
+    border-radius: 10px;
     margin-top: 1%;
+    margin-right: 50px;
+    padding-left: 20px;
+    background-color: #edf5e1;
+    padding:6px;
+  }
+
+.intro{ 
+    border-radius: 10px;
+    margin-top: 2%;
     margin-right: 50px;
     padding-left: 20px;
     background-color: #edf5e1;
@@ -16,6 +26,7 @@
 }
 
 .explanation{ 
+    border-radius: 10px;
     margin-top: 1%;
     margin-right: 50px;
     padding-left: 20px;

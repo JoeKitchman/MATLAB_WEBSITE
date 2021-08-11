@@ -1,8 +1,10 @@
 .header {
     padding: 1px; 
     text-align: center;
-    background: #1abc9c;
-    color: white;
-    font-size: 20px;
-    width: 100%
+    /*background: #1abc9c;*/
+    background: black;
+    color: #edf5e1;
+    font-size: 18px;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
