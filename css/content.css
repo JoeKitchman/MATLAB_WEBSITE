@@ -51,10 +51,14 @@
     background-color: #edf5e1;
     padding:6px;
 }
+.videoContainer{
+  
+}
 
-.video{
+.videoContainer .video{
     text-align: center;
     width: 50%;
+    height: auto;
     padding-left: 25%;
 }
 
