@@ -3,6 +3,7 @@
     <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
     <link rel="stylesheet" type="text/css" href="../css/header.css">
     <link rel="stylesheet" type="text/css" href="../css/content.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <!-- The script tag should live in the head of your page if at all possible -->
 </head>
@@ -47,20 +48,23 @@
         </div>
         <div class="videoContainer">
             <div class="video">
-                <!-- Youtube Embed -->
+                <!-- Youtube Embed 
                 <iframe width="100%" height="auto" src="https://www.youtube.com/embed/PVOjuBdFVlc"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
+                -->
                 <!-- Vidyard Inbed - Put this wherever you would like your player to appear -->
                 <img style="width: 50%; margin: auto; display: block;" class="vidyard-player-embed"
                     src="https://play.vidyard.com/tSmZrNt7X7zUXFtqskCGAG.jpg" data-uuid="tSmZrNt7X7zUXFtqskCGAG"
                     data-v="4" data-type="inline" />
-                <!-- Local Stored -->
+                <!-- Local Stored 
                 <video width="100%" height="auto" controls>
                     <source src="../assets/Survivor Game Changers - Tony Voted Out.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
+                -->
+
             </div>
         </div>
         <div class="explanation">
@@ -146,6 +150,8 @@
             <a href="" class="next">Next ❯</a>
         </div>
     </div>
+    <div id="footer">
+    </div>
 </body>
 
 <script type="text/javascript" async src="https://play.vidyard.com/embed/v4.js"></script>
@@ -153,5 +159,9 @@
 <script>
     $(function () {
         $("#navbar").load("../components/navbar.html");
+    });
+
+    $(function () {
+        $("#footer").load("../components/footer.html");
     });
 </script>
