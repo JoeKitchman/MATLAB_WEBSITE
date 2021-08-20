@@ -9,8 +9,8 @@
 </head>
 
 <body>
-    <div class="title">
-        <h1>Dexters Lab</h1>
+    <div id="title">
+
     </div>
 
     <div id="horinavbar">
@@ -137,6 +137,10 @@
 <script type="text/javascript" async src="https://play.vidyard.com/embed/v4.js"></script>
 
 <script>
+    $(function () {
+        $("#title").load("../components/title.html");
+    });
+
     $(function () {
         $("#horinavbar").load("../components/horinavbar.html");
     });
