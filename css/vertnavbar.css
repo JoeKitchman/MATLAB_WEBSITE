@@ -4,15 +4,23 @@ body {
   margin: 0;
 }
 
-/* Style the side navigation */
-.navbar {
+.vertcontainer{
+  padding-top: 10%;
   height: 100%;
-  width: 200px;
+  width: 160px;
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
-  background-color: #05386B;
+  background-color: transparent;
+}
+/* Style the side navigation */
+.vertnavbar {
+  height: 100%;
+  width: 160px;
+  z-index: 1;
+  /*left: 0;*/
+  top: 0;
+  background-color: #333;
   overflow-x: hidden;
 }
 
@@ -34,6 +42,7 @@ body {
   display: block;
   text-align: center;
 }
+
 /* Change color on hover */
 .list a:hover {
   background-color: #379683;

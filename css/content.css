@@ -1,17 +1,17 @@
 .content {
-    margin-left: 250px;
+    margin-left: 210px;
     margin-bottom: 1%;
-    margin-right: 50px;
-    margin-top: 1%;
+    margin-right: 50px;   
   }
 
-.title{
+.pagetitle{
     border-radius: 10px;
     background-color: #edf5e1;
     padding: 6px;
     padding-right: 8px;
     width: fit-content;
     line-height:0.8;
+    margin-top: 1%;
   }
 
 .buttons{
@@ -56,10 +56,8 @@
 }
 
 .videoContainer .video{
-    text-align: center;
-    width: 50%;
-    height: auto;
-    padding-left: 25%;
+    width: 40%;
+    padding-left: 30%;
 }
 
 .explanation{ 
