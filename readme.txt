@@ -9,3 +9,9 @@ https://dev.to/manuthecoder/how-to-make-a-simple-code-editor-using-codemirror-3o
 
 Web Design Info -
 https://webflow.com/blog/web-page-design
+
+Important Links -
+Video Storage - https://secure.vidyard.com/organizations/1739620/library
+              - https://cloudinary.com/console/c-3b8f360e82cefa7376ef551481b6d8
+Hosting - https://app.netlify.com/sites/matlablearner/settings/general
+        
