@@ -5,21 +5,20 @@
     <link rel="stylesheet" type="text/css" href="../css/vertnavbar.css" />
     <link rel="stylesheet" type="text/css" href="../css/content.css">
     <link rel="stylesheet" type="text/css" href="../css/footer.css">
+
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" async src="https://play.vidyard.com/embed/v4.js"></script>
 </head>
 
 <body>
     <div id="title">
-
     </div>
-
     <div id="horinavbar">
     </div>
-
-    <div id="vertnavbar">
-    </div>
-
     <div class="content">
+        <div id="vertnavbar">
+        </div>
+
         <div class="pagetitle">
             <h1>Syntax</h1>
         </div>
@@ -55,22 +54,28 @@
         </div>
         <div class="videoContainer">
             <div class="video">
+                <!-- Vidyard Embed -->
+                <img style="width: 50%; margin: auto; display: block;" class="vidyard-player-embed"
+                    src="https://play.vidyard.com/tSmZrNt7X7zUXFtqskCGAG.jpg" data-uuid="tSmZrNt7X7zUXFtqskCGAG"
+                    data-v="4" data-type="inline" />
+                <!--Cloudinary Embed -->
+                <video controls width="100%"
+                    src="https://res.cloudinary.com/dvv0os7ft/video/upload/e_volume:-80/v1629063502/Survivor_Game_Changers_-_Tony_Voted_Out_ql3uf7.mp4">
+                </video>
+
                 <!-- Youtube Embed 
                 <iframe width="100%" height="auto" src="https://www.youtube.com/embed/PVOjuBdFVlc"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
                 -->
-                <!-- Vidyard Inbed -->
-                <img style="width: 50%; margin: auto; display: block;" class="vidyard-player-embed"
-                    src="https://play.vidyard.com/tSmZrNt7X7zUXFtqskCGAG.jpg" data-uuid="tSmZrNt7X7zUXFtqskCGAG"
-                    data-v="4" data-type="inline" />
                 <!-- Local Stored 
                 <video width="100%" height="auto" controls>
                     <source src="../assets/Survivor Game Changers - Tony Voted Out.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 -->
+
             </div>
         </div>
         <div class="explanation">
@@ -133,8 +138,6 @@
     <div id="footer">
     </div>
 </body>
-
-<script type="text/javascript" async src="https://play.vidyard.com/embed/v4.js"></script>
 
 <script>
     $(function () {
