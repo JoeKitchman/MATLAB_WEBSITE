@@ -1,9 +1,15 @@
 .content {
-    margin-left: 210px;
+    margin-left: 200px;
+    padding-left: 10px;
     margin-bottom: 1%;
-    margin-right: 50px;   
+    padding-bottom: 1%;
+    margin-right: 40px; 
+    padding-right: 10px; 
+    box-shadow: 0px 10px 8px #888888;
   }
-
+#spacer{
+  padding-top: 1%;
+}
 .pagetitle{
     border-radius: 10px;
     background-color: #edf5e1;
@@ -11,7 +17,6 @@
     padding-right: 8px;
     width: fit-content;
     line-height:0.8;
-    margin-top: 1%;
   }
 
 .buttons{
