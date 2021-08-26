@@ -1,28 +1,36 @@
 <head>
     <link rel="stylesheet" type="text/css" href="../css/styles.css" />
-    <link rel="stylesheet" type="text/css" href="../css/navbar.css" />
-    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/title.css">
+    <link rel="stylesheet" type="text/css" href="../css/horinavbar.css">
+    <link rel="stylesheet" type="text/css" href="../css/vertnavbar.css" />
     <link rel="stylesheet" type="text/css" href="../css/content.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
-    <div class="header">
-        <h1>MATLAB</h1>
+    <div id="title">
+    </div>
+    <div id="horinavbar">
     </div>
 
-    <div id="navbar">
-    </div>
 
-    <div class="content">
-        <div class="intro">
-            Intro Para
-        </div>
+    <div id="footer">
     </div>
 </body>
 
+</html>
+
 <script>
     $(function () {
-        $("#navbar").load("../components/navbar.html");
+        $("#title").load("../components/title.html");
+    });
+
+    $(function () {
+        $("#horinavbar").load("../components/horinavbar.html");
+    });
+
+    $(function () {
+        $("#footer").load("../components/footer.html");
     });
 </script>
