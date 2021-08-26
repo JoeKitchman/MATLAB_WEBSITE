@@ -5,9 +5,7 @@
     <link rel="stylesheet" type="text/css" href="../css/vertnavbar.css" />
     <link rel="stylesheet" type="text/css" href="../css/content.css">
     <link rel="stylesheet" type="text/css" href="../css/footer.css">
-
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script type="text/javascript" async src="https://play.vidyard.com/embed/v4.js"></script>
 </head>
 
 <body>
@@ -15,7 +13,7 @@
     </div>
     <div id="horinavbar">
     </div>
-    <div id="Content Divide">
+    <div id="ContentDivide">
         <div id="vertnavbar">
         </div>
         <div class="content">
@@ -159,4 +157,10 @@
     $(function () {
         $("#footer").load("../components/footer.html");
     });
+</script>
+
+<script>
+    const mainHeight = document.getElementById("ContentDivide").style.height;
+
+    document.getElementById("vertnavbar").style.height = mainHeight;
 </script>

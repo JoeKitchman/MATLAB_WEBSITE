@@ -3,13 +3,14 @@ body {
 }
 
 /* Style the side navigation */
-.vertnavbar {
+#vertnavbar {
   height: 100%;
   width: 160px;
-  float:left;
+  float: left;
   background-color: #333;
   overflow-x: hidden;
-  overflow-y: hidden;
+  margin-bottom: 1%;
+    padding-bottom: 1%;
 }
 
 /* Side navigation links */
