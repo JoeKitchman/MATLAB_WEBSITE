@@ -7,4 +7,20 @@ body {
     overflow-x: hidden
 }
 
+.content::-webkit-scrollbar {
+    width: 16px;
+}
+ 
+.content::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+}
+ 
+.content::-webkit-scrollbar-thumb {
+    background-color: #cca165;
+}
+
+a:visited { 
+    text-decoration: none; 
+    color: white; 
+}
 
