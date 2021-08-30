@@ -13,11 +13,11 @@
     background-color: #333;
   }
   
-  li {
+  li2 {
     float: left;
   }
   
-  li a {
+  li2 a {
     display: block;
     color: white;
     text-align: center;
@@ -25,6 +25,6 @@
     text-decoration: none;
   }
   
-  li a:hover {
+  li2 a:hover {
     background-color: #111;
   }

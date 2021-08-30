@@ -29,9 +29,6 @@
     margin-right: 1px;
   }
 
-.pagetitle .h1{
-}
-
 .buttons{
     width: 100%;
     height:auto;
@@ -84,3 +81,8 @@
     background-color: #edf5e1;
     padding:6px;
 }
+
+.explanation ul.useslist{
+    clear: left;
+}
+
