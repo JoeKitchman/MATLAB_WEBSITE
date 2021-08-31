@@ -1,7 +1,5 @@
 body {  
-    /*background-color: #5cdb95;*/
     background-color: white;
-    /*background-image: linear-gradient(#f37287, #e8b750);*/
     font-family: Arial, Helvetica, sans-serif;
     /*Hides bottom scroll bar*/
     overflow-x: hidden;
@@ -13,11 +11,11 @@ body {
 }
  
 .content::-webkit-scrollbar-track {
-    background-color: rgb(104, 104, 104);
+    /*background-color: rgb(104, 104, 104);*/
 }
  
 .content::-webkit-scrollbar-thumb {
-    background-color: #333;
+    /*background-color: #333;*/
 }
 
 a:visited { 
