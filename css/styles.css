@@ -4,7 +4,8 @@ body {
     /*background-image: linear-gradient(#f37287, #e8b750);*/
     font-family: Arial, Helvetica, sans-serif;
     /*Hides bottom scroll bar*/
-    overflow-x: hidden
+    overflow-x: hidden;
+    margin: 0;
 }
 
 .content::-webkit-scrollbar {
@@ -12,15 +13,15 @@ body {
 }
  
 .content::-webkit-scrollbar-track {
-    background-color: #e4e4e4;
+    background-color: rgb(104, 104, 104);
 }
  
 .content::-webkit-scrollbar-thumb {
-    background-color: #cca165;
+    background-color: #333;
 }
 
 a:visited { 
     text-decoration: none; 
-    color: white; 
+    color: inherit; 
 }
 

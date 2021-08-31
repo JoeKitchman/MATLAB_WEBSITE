@@ -1,16 +1,18 @@
-body {
-  margin: 0;
-}
-
 /* Style the side navigation */
 #vertnavbar {
   height: 100%;
   width: 160px;
   float: left;
   background-color: #333;
+  /* Colour #003380 */
+  background-image: url('../assets/MATLABwaves.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 900/600;
   overflow-x: hidden;
   margin-bottom: 1%;
-    padding-bottom: 1%;
+  padding-bottom: 1%;
 }
 
 /* Side navigation links */

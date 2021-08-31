@@ -1,0 +1,44 @@
+.columna {
+    float: left;
+    width: 50%;
+    /* Colour #003380 */
+    background-image: url('../assets/MATLABwaves.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    aspect-ratio: 900/600;
+    text-align: center;
+  }
+
+.columnb{
+  float: left;
+  width: 50%;
+  /* Colour #FA7268 (Light) C62368 (Dark)*/
+  background-image: url('../assets/Csharpwaves.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  aspect-ratio: 900/600;
+  text-align: center;
+}
+
+#hometitle{
+    padding-top: 20%;
+    padding-bottom: 20%;
+    font-size: 400%; 
+  }
+
+.columna h2:hover{
+  transform: scale(1.1); 
+}
+
+.columnb h2:hover{
+  transform: scale(1.1); 
+}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }

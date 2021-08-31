@@ -5,7 +5,7 @@
     color: #edf5e1;
   }
 
-.list {
+.items {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -26,5 +26,6 @@
   }
   
   li2 a:hover {
-    background-color: #111;
+    background-color: #379683;
+    color: #EDF5E1;
   }
