@@ -1,0 +1,194 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/title.css">
+    <link rel="stylesheet" type="text/css" href="../../css/horinavbar.css">
+    <link rel="stylesheet" type="text/css" href="../../css/matlabvertnav.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/content.css">
+    <link rel="stylesheet" type="text/css" href="../../css/footer.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    <div id="title">
+    </div>
+    <div id="horinavbar">
+    </div>
+    <div id="ContentDivide">
+        <div id="vertnavbar">
+        </div>
+        <div class="content">
+            <div id="spacer">
+            </div>
+            <div class="pagetitle">
+                <h1>Syntax</h1>
+            </div>
+            <div class="buttons">
+                <a href="" class="previous">❮ Previous</a>
+                <a href="" class="next">Next ❯</a>
+            </div>
+            <div class="intro">
+                <p>MATLAB is essencialy a super calculator, with the basic syntax following what you would expect.
+                <p>You can enter commands at the >> in the Command Window.</p>
+            </div>
+            <div class="videoContainer">
+                <div class="video">
+                    <!--Cloudinary Embed -->
+                    <video controls width="100%"
+                        src="https://res.cloudinary.com/dvv0os7ft/video/upload/e_volume:-80/v1629063502/Survivor_Game_Changers_-_Tony_Voted_Out_ql3uf7.mp4">
+                    </video>
+
+                    <!-- Vidyard Embed 
+                    <img style="width: 50%; margin: auto; display: block;" class="vidyard-player-embed"
+                        src="https://play.vidyard.com/tSmZrNt7X7zUXFtqskCGAG.jpg" data-uuid="tSmZrNt7X7zUXFtqskCGAG"
+                        data-v="4" data-type="inline" />
+                    -->
+                    <!-- Youtube Embed 
+                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/PVOjuBdFVlc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                    -->
+                    <!-- Local Stored 
+                    <video width="100%" height="auto" controls>
+                    <source src="../assets/Survivor Game Changers - Tony Voted Out.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video>
+                    -->
+                </div>
+            </div>
+            <div class="explanation">
+                <h2>Example</h2>
+                <p>Entering a valid expression such as -
+                <pre>5 + 5</pre>
+                <p>and pressing enter would produce the expect result, in
+                    this case </p>
+                <pre>ans = 10</pre>
+                <p>This answer is then stored and can used used in other calculations, these are variables.</p>
+            </div>
+            <div class="explanation">
+                <h2> Commonly Used Operators</h2>
+                <p>These are some of the commany used characters and symbols used when working within MATLAB</p>
+                <table calss="syntaxtable">
+                    <tbody>
+                        <tr>
+                            <th style="text-align:center;width:25%;">Operator</th>
+                            <th style="text-align:center;">Purpose</th>
+                        </tr>
+                        <tr>
+                            <td><b>+</b></td>
+                            <td>Plus; addition operator.</td>
+                        </tr>
+                        <tr>
+                            <td><b>-</b></td>
+                            <td>Minus; subtraction operator.</td>
+                        </tr>
+                        <tr>
+                            <td><b>*</b></td>
+                            <td>Scalar and matrix multiplication operator.</td>
+                        </tr>
+                        <tr>
+                            <td><b>.*</b></td>
+                            <td>Array multiplication operator.</td>
+                        </tr>
+                        <tr>
+                            <td><b>^</b></td>
+                            <td>Scalar and matrix exponentiation operator.</td>
+                        </tr>
+                        <tr>
+                            <td><b>.^</b></td>
+                            <td>Array exponentiation operator.</td>
+                        </tr>
+                        <tr>
+                            <td><b>\</b></td>
+                            <td>Left-division operator.</td>
+                        </tr>
+                        <tr>
+                            <td><b>/</b></td>
+                            <td>Right-division operator.</td>
+                        </tr>
+                        <tr>
+                            <td><b>.\</b></td>
+                            <td>Array left-division operator.</td>
+                        </tr>
+                        <tr>
+                            <td><b>./</b></td>
+                            <td>Array right-division operator.</td>
+                        </tr>
+                        <tr>
+                            <td><b>:</b></td>
+                            <td>Colon; generates regularly spaced elements and represents an entire row or column.</td>
+                        </tr>
+                        <tr>
+                            <td><b>( )</b></td>
+                            <td>Parentheses; encloses function arguments and array indices; overrides precedence.</td>
+                        </tr>
+                        <tr>
+                            <td><b>[ ]</b></td>
+                            <td>Brackets; enclosures array elements.</td>
+                        </tr>
+                        <tr>
+                            <td><b>.</b></td>
+                            <td>Decimal point.</td>
+                        </tr>
+                        <tr>
+                            <td><b>…</b></td>
+                            <td>Ellipsis; line-continuation operator</td>
+                        </tr>
+                        <tr>
+                            <td><b>…</b></td>
+                            <td>Ellipsis; line-continuation operator</td>
+                        </tr>
+                        <tr>
+                            <td><b>;</b></td>
+                            <td>Semicolon; separates columns and suppresses display.</td>
+                        </tr>
+                        <tr>
+                            <td><b>%</b></td>
+                            <td>Percent sign; designates a comment and specifies formatting.</td>
+                        </tr>
+                        <tr>
+                            <td><b>_</b></td>
+                            <td>Quote sign and transpose operator.</td>
+                        </tr>
+                        <tr>
+                            <td><b>._</b></td>
+                            <td>Nonconjugated transpose operator.</td>
+                        </tr>
+                        <tr>
+                            <td><b>=</b></td>
+                            <td>Assignment operator.</td>
+                        </tr>
+                        <tr>
+                            <td><b>pi</b></td>
+                            <td>The number π</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="buttons">
+                <a href="" class="previous">❮ Previous</a>
+                <a href="" class="next">Next ❯</a>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+    </div>
+</body>
+
+<script>
+    $(function () {
+        $("#title").load("../../components/title.html");
+    });
+
+    $(function () {
+        $("#horinavbar").load("../../components/horinavbar.html");
+    });
+
+    $(function () {
+        $("#vertnavbar").load("../../components/matlabnavbar.html");
+    });
+
+    $(function () {
+        $("#footer").load("../../components/footer.html");
+    });
+</script>
