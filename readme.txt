@@ -7,5 +7,5 @@ Important Links -
 Video Storage - https://cloudinary.com/console/c-3b8f360e82cefa7376ef551481b6d8
               - [Transformations] https://cloudinary.com/documentation/video_manipulation_and_delivery#on_the_fly_video_encoding_and_delivery
 	      - https://secure.vidyard.com/organizations/1739620/library
-Hosting - https://app.netlify.com/sites/matlablearner/settings/general
+Hosting - https://app.netlify.com/sites/dexterslab/overview
         
