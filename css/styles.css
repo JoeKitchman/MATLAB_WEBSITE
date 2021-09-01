@@ -23,3 +23,11 @@ a:visited {
     color: inherit; 
 }
 
+pre{
+    padding: 15px;
+    font-size: 15px;
+    overflow-x: auto;
+    border-radius: 8px;
+    background: rgb(204, 204, 204) !important;
+}
+
