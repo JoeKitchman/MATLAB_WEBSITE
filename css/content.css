@@ -37,11 +37,6 @@
     display: inline-block;
   }
   
-  a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
   .buttons .previous {
     float: left;
     border-radius: 5px;

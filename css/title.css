@@ -10,9 +10,12 @@
     background-position: center;
     background-size: 40%;*/
   }
-
-  .title img{
-    width: 400px;
-    object-fit:fill;
-    padding: 1%;
-  }
+.title a{
+  text-decoration: none;
+  color: white;
+}
+.title img{
+  width: 400px;
+  object-fit:fill;
+  padding: 1%;
+}
