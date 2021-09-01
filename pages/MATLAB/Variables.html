@@ -1,0 +1,86 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/title.css">
+    <link rel="stylesheet" type="text/css" href="../../css/horinavbar.css">
+    <link rel="stylesheet" type="text/css" href="../../css/matlabvertnav.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/content.css">
+    <link rel="stylesheet" type="text/css" href="../../css/footer.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    <div id="title">
+    </div>
+    <div id="horinavbar">
+    </div>
+    <div id="ContentDivide">
+        <div id="vertnavbar">
+        </div>
+        <div class="content">
+            <div id="spacer">
+            </div>
+            <div class="pagetitle">
+                <h1>Variables</h1>
+            </div>
+            <div class="buttons">
+                <a href="" class="previous">❮ Previous</a>
+                <a href="" class="next">Next ❯</a>
+            </div>
+            <div class="intro">
+                <p>Variables are letters or words that have been assinged a value, such as numbers or arrays (more about
+                    those later!). </p>
+                <p>This value can then be recalled for
+                    later use in calculations. Current variable values can be seen down the right hand side of MATLAB
+                    under "Workspace".</p>
+            </div>
+            <div class="videoContainer">
+                <div class="video">
+                    <!--Cloudinary Embed -->
+                    <video controls width="100%"
+                        src="https://res.cloudinary.com/dvv0os7ft/video/upload/e_volume:-80/v1629063502/Survivor_Game_Changers_-_Tony_Voted_Out_ql3uf7.mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="explanation">
+                <h2>Example</h2>
+                <p>Values can simply be assigned by declaring : <b>[Variable Name] = [Value]</b></p>
+                <pre>a = 2; b = 7; c = a * b</pre>
+                <pre>c = 14</pre>
+            </div>
+            <div class="explanation">
+                <h2>Who</h2>
+                <p>The <b>who</b> command displays all of the variable names used.</p>
+                <pre>Your variables are:</pre>
+                <pre>a b c </pre>
+            </div>
+            <div class="explanation">
+                <h2>Clear</h2>
+                <p>The <b>clear</b> command displays all of the variable names used.</p>
+            </div>
+            <div class="buttons">
+                <a href="" class="previous">❮ Previous</a>
+                <a href="" class="next">Next ❯</a>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+    </div>
+</body>
+
+<script>
+    $(function () {
+        $("#title").load("../../components/title.html");
+    });
+
+    $(function () {
+        $("#horinavbar").load("../../components/horinavbar.html");
+    });
+
+    $(function () {
+        $("#vertnavbar").load("../../components/matlabnavbar.html");
+    });
+
+    $(function () {
+        $("#footer").load("../../components/footer.html");
+    });
+</script>

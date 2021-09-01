@@ -1,0 +1,103 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/title.css">
+    <link rel="stylesheet" type="text/css" href="../../css/horinavbar.css">
+    <link rel="stylesheet" type="text/css" href="../../css/matlabvertnav.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/content.css">
+    <link rel="stylesheet" type="text/css" href="../../css/footer.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    <div id="title">
+    </div>
+    <div id="horinavbar">
+    </div>
+    <div id="ContentDivide">
+        <div id="vertnavbar">
+        </div>
+        <div class="content">
+            <div id="spacer">
+            </div>
+            <div class="pagetitle">
+                <h1>Commands</h1>
+            </div>
+            <div class="buttons">
+                <a href="" class="previous">❮ Previous</a>
+                <a href="" class="next">Next ❯</a>
+            </div>
+            <div class="intro">
+                <p>MATLAB has commands to help make working within it much easier. We covered some of these in the
+                    previous page such as who and clear but there are a few more essential ones you should know.</p>
+            </div>
+            <div class="videoContainer">
+                <div class="video">
+                    <!--Cloudinary Embed -->
+                    <video controls width="100%"
+                        src="https://res.cloudinary.com/dvv0os7ft/video/upload/e_volume:-80/v1629063502/Survivor_Game_Changers_-_Tony_Voted_Out_ql3uf7.mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="explanation">
+                <h2>Session Commands</h2>
+                <p>These commands are used for managing a current session -</p>
+                <table calss="syntaxtable">
+                    <tbody>
+                        <tr>
+                            <th style="text-align:center;width:25%;">Command</th>
+                            <th style="text-align:center;">Purpose</th>
+                        </tr>
+                        <tr>
+                            <td><b>clear</b></td>
+                            <td>Removes variables from memory</td>
+                        </tr>
+                        <tr>
+                            <td><b>who</b></td>
+                            <td>Lists current variable names.</td>
+                        </tr>
+                        <tr>
+                            <td><b>clc</b></td>
+                            <td>Clears command window.</td>
+                        </tr>
+                        <tr>
+                            <td><b>quit</b></td>
+                            <td>Stops MATLAB.</td>
+                        </tr>
+                        <tr>
+                            <td><b>lookfor</b></td>
+                            <td>Searches help entries for a keyword.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="explanation">
+                <h2>System Commands</h2>
+                <p></p>
+            </div>
+            <div class="buttons">
+                <a href="" class="previous">❮ Previous</a>
+                <a href="" class="next">Next ❯</a>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+    </div>
+</body>
+
+<script>
+    $(function () {
+        $("#title").load("../../components/title.html");
+    });
+
+    $(function () {
+        $("#horinavbar").load("../../components/horinavbar.html");
+    });
+
+    $(function () {
+        $("#vertnavbar").load("../../components/matlabnavbar.html");
+    });
+
+    $(function () {
+        $("#footer").load("../../components/footer.html");
+    });
+</script>
