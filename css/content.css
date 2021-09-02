@@ -20,8 +20,8 @@
 .pagetitle{
     border-radius: 10px;
     background-color: #edf5e1;
-    padding: 6px;
-    padding-right: 8px;
+    padding: 0.5%;
+    /*padding-right: 8px;*/
     /* This make the text sit left, remove for central text*/
     width: fit-content;
     line-height:0.8;
