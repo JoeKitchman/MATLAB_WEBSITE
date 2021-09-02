@@ -1,0 +1,158 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/title.css">
+    <link rel="stylesheet" type="text/css" href="../../css/horinavbar.css">
+    <link rel="stylesheet" type="text/css" href="../../css/matlabvertnav.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/content.css">
+    <link rel="stylesheet" type="text/css" href="../../css/footer.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    <div id="title">
+    </div>
+    <div id="horinavbar">
+    </div>
+    <div id="ContentDivide">
+        <div id="vertnavbar">
+        </div>
+        <div class="content">
+            <div id="spacer">
+            </div>
+            <div class="pagetitle">
+                <h1>Loops</h1>
+            </div>
+            <div class="buttons">
+                <a href="" class="previous">❮ Previous</a>
+                <a href="" class="next">Next ❯</a>
+            </div>
+            <div class="intro">
+                <p>There may be occasions where you need to excicute a section of code multiple times. This is done
+                    though creating a loop.</p>
+                <p>There are three types of loops: <b>While Loop</b>, <b>For Loop</b> and <b>Nested loops</b>.</p>
+            </div>
+            <div class="videoContainer">
+                <div class="video">
+                    <!--Cloudinary Embed -->
+                    <video controls width="100%"
+                        src="https://res.cloudinary.com/dvv0os7ft/video/upload/e_volume:-80/v1629063502/Survivor_Game_Changers_-_Tony_Voted_Out_ql3uf7.mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="explanation">
+                <h2>While Loop</h2>
+                These loops continue to excecute the code inside of it while a set condition is met.
+                <pre>a = 10;                
+while( a < 20 )
+    fprintf('value of a: %d\n', a);
+    a = a + 1;
+end</pre>
+                Here the code will print out the alue of a while a is smaller than 20, preducing the following result -
+                <pre>
+value of a: 10
+value of a: 11
+value of a: 12
+value of a: 13
+value of a: 14
+value of a: 15
+value of a: 16
+value of a: 17
+value of a: 18
+value of a: 19</pre>
+            </div>
+            <div class="explanation">
+                <h2>For Loop</h2>
+                These loops excecute code for a pre determined amount of time or steps.
+                There are three conditions that can be set -
+                <ul>
+                    <li><b>[initial value:end value]</b></li>
+                    <pre>
+for a = 10:20
+    fprintf('value of a: %d\n', a);
+end </pre>
+                    <p>This incriemnts the variable by 1 from initial value to end value, ending when the varable a is
+                        greater
+                        than endval. Therefore this displays every value between 10 and 20, inclusive.</p>
+                    <pre>
+value of a: 10
+value of a: 11
+value of a: 12
+value of a: 13
+...
+value of a: 17
+value of a: 18
+value of a: 19
+value of a: 20 </pre>
+                    <li><b>[initial value]:[step]:[end value]</b></li>
+                    <pre>
+for a = 10: 2: 20
+    disp(a)
+end</pre>
+                    <p>This is the same as rhe previous loop, but you can specify how much to incriment by each time. In
+                        this example, the value grows by 2 each time. This value can also be negative. The outcome of
+                        this loop would be -</p>
+                    <pre>
+value of a: 10
+value of a: 12
+value of a: 14
+value of a: 16
+value of a: 18
+value of a: 20 </pre>
+                    <li><b>[value array]</b></li>
+                    <pre>
+for a = [24,18,17,23,28]
+    a*2
+end</pre>
+                    <p>This loop cycles through all items within an array, excecuting the code with the value set to
+                        that variable. This example would produce all items within the array, but times by 2. To display
+                        the values in the array, use the <b>disp</b> operator</p>
+                    <pre>
+ans = 48
+ans = 36
+ans = 34
+ans = 46
+ans = 56</pre>
+                </ul>
+                <p></p>
+            </div>
+            <div class="explanation">
+                <h2>Nested Loop</h2>
+                Nested loops are simply loops within other loops, with each expression being the conditions that must be
+                met, such as a while or for loop, and the statment is the code that will be excecuted.
+                <pre>
+while [expression1]
+    for [expression2]
+        [statement]
+    end
+end</pre>
+                <p></p>
+            </div>
+            <div class="buttons">
+                <a href="" class="previous">❮ Previous</a>
+                <a href="" class="next">Next ❯</a>
+            </div>
+            <div id="spacer">
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+    </div>
+</body>
+
+<script>
+    $(function () {
+        $("#title").load("../../components/title.html");
+    });
+
+    $(function () {
+        $("#horinavbar").load("../../components/horinavbar.html");
+    });
+
+    $(function () {
+        $("#vertnavbar").load("../../components/matlabnavbar.html");
+    });
+
+    $(function () {
+        $("#footer").load("../../components/footer.html");
+    });
+</script>
