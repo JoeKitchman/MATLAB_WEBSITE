@@ -1,7 +1,7 @@
 #ContentDivide{
   height: auto;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 375px) {
   /* For mobile phones: */
   [class*="content"] {
     margin-right: 0px !important;
