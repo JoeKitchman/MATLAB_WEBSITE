@@ -1,6 +1,6 @@
 .columna {
     float: left;
-    width: 48.9%;
+    width: 48.5%;
     /* Colour #003380 */
     background-image: url('../assets/MATLABwaves.svg');
     background-repeat: no-repeat;
@@ -13,7 +13,7 @@
 
 .columnb{
   float: right;
-  width: 48.9%;
+  width: 48.5%;
   /* Colour #FA7268 (Light) C62368 (Dark)*/
   background-image: url('../assets/Csharpwaves.svg');
   background-repeat: no-repeat;
