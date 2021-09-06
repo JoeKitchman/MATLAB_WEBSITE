@@ -1,0 +1,171 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/title.css">
+    <link rel="stylesheet" type="text/css" href="../../css/horinavbar.css">
+    <link rel="stylesheet" type="text/css" href="../../css/matlabvertnav.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/content.css">
+    <link rel="stylesheet" type="text/css" href="../../css/footer.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    <div id="title">
+    </div>
+    <div id="horinavbar">
+    </div>
+    <div id="ContentDivide">
+        <div id="vertnavbar">
+        </div>
+        <div class="content">
+            <div id="spacer">
+            </div>
+            <div class="pagetitle">
+                <h1>MATLAB - Matrix</h1>
+            </div>
+            <div class="buttons">
+                <a href="" class="previous">❮ Previous</a>
+                <a href="" class="next">Next ❯</a>
+            </div>
+            <div class="intro">
+                <p>Similar to vectors, a matrix is a two-dimensional array of numbers, as opposed to the one dimension
+                    of the vector. Having two dimensions in MATLAB essencialy means that the vector has multiple lines,
+                    making it a matrix. </p>
+            </div>
+            <div class="videoContainer">
+                <div class="video">
+                    <!--Cloudinary Embed -->
+                    <video controls width="100%"
+                        src="https://res.cloudinary.com/dvv0os7ft/video/upload/e_volume:-80/v1629063502/Survivor_Game_Changers_-_Tony_Voted_Out_ql3uf7.mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="explanation">
+                <h2>Cosnstructing a Matrix</h2>
+                <p>To construct a matrix, simply bring together multiple row vectors into one set of square brackets.
+                    All vectors must be the same size, and are seperated by a semicolon.</p>
+                <pre>a = [ 1, 2, 3, 4, 5; 2, 3, 4, 5, 6; 3, 4, 5, 6, 7; 4, 5, 6, 7, 8]</pre>
+                <p>Excecuting the above statment will produce:</p>
+                <pre>
+a =
+      1     2     3     4     5
+      2     3     4     5     6
+      3     4     5     6     7
+      4     5     6     7     8
+                </pre>
+            </div>
+            <div class="explanation">
+                <h2>Referencing elements</h2>
+                <p>You can obtain <b>specific elements</b> within a matrix in simmilar ways to a vector.</p>
+                <p>To refer to an element in the 3<sup>rd</sup> row and 2<sup>nd</sup> column of the same matrix used
+                    above, take the matrix name, followed by 3 and 2 in brackets:</p>
+                <pre>
+a(3,2)
+ans = 
+    4</pre>
+                <p>You can referance <b>all row elements</b> with a simmilar technique. Taking the matric name and then
+                    in
+                    brackets adding a colon followed by the column. Again following from the example matrix above, row 2
+                    has been identified:</p>
+                <pre>
+v = a(:,2)
+ans = 
+        2
+        3    
+        4  
+        5</pre>
+                <p>Adding a colon and another number, just like getting a vector range, will give a range of rows. In
+                    this example, rows 2 and 3 have been retrived:</p>
+                <pre>
+v = a(:,2:3)
+ans =
+        2 3
+        3 4
+        4 5
+        5 6</pre>
+            </div>
+            <div class="explanation">
+                <h2>Deleting Rows and Columns</h2>
+                <p>To delete an entire row or column of a matrix, assign an empty set of square braces to that row or
+                    column. [] denotes an empty array.</p>
+                <p>To delete the 1st <b>row</b> of our example:</p>
+                <pre>
+a( 1 , : ) = []
+
+a =
+      2     3     4     5     6
+      3     4     5     6     7
+      4     5     6     7     8
+                </pre>
+                <p>To delete the 1st <b>column</b> of our example:</p>
+                <pre>
+a( : , 1 ) = []
+
+a =
+      2     3     4     5
+      3     4     5     6
+      4     5     6     7
+      5     6     7     8
+                </pre>
+                <P>Simply chnage the number for the dired row or column as required, to delete or edit the matrix.</P>
+            </div>
+            <div class="explanation">
+                <h2><b>Vector Manipulation</b></h2>
+                <h2>Addition, Subtraction & Division</h2>
+                <p>You can <b>add, subtract or divide</b> two vectors together. Both the vectors must contain same
+                    number of
+                    elements.</p>
+                <pre>
+x = [1, 2, 3; 4, 5, 6; 7, 8, 9]
+y = [7, 5, 6; 6, 9, 1; 2, 4, 3]
+z = x + y 
+a = x - y 
+b = x / y
+</pre>
+                <p>This script will produce the following result:</p>
+                <pre>
+z =
+    8     7     9
+    10    14     7
+    9    12    12
+                    
+a =
+    -6    -3    -3
+    -2    -4     5
+    5     4     6
+   
+b =
+    0.0769   -0.2308    0.9231
+    0.4103   -0.2308    1.2564
+    0.7436   -0.2308    1.5897
+</pre>
+            </div>
+        </div>
+        <div class="buttons">
+            <a href="" class="previous">❮ Previous</a>
+            <a href="" class="next">Next ❯</a>
+        </div>
+        <div id="spacer">
+        </div>
+    </div>
+    </div>
+    <div id="footer">
+    </div>
+</body>
+
+<script>
+    $(function () {
+        $("#title").load("../../components/title.html");
+    });
+
+    $(function () {
+        $("#horinavbar").load("../../components/horinavbar.html");
+    });
+
+    $(function () {
+        $("#vertnavbar").load("../../components/matlabnavbar.html");
+    });
+
+    $(function () {
+        $("#footer").load("../../components/footer.html");
+    });
+</script>
