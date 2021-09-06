@@ -1,0 +1,146 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/title.css">
+    <link rel="stylesheet" type="text/css" href="../../css/horinavbar.css">
+    <link rel="stylesheet" type="text/css" href="../../css/matlabvertnav.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/content.css">
+    <link rel="stylesheet" type="text/css" href="../../css/footer.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    <div id="title">
+    </div>
+    <div id="horinavbar">
+    </div>
+    <div id="ContentDivide">
+        <div id="vertnavbar">
+        </div>
+        <div class="content">
+            <div id="spacer">
+            </div>
+            <div class="pagetitle">
+                <h1>MATLAB - Vectors</h1>
+            </div>
+            <div class="buttons">
+                <a href="" class="previous">❮ Previous</a>
+                <a href="" class="next">Next ❯</a>
+            </div>
+            <div class="intro">
+                <p>A vector is a one-dimensional array of numbers. MATLAB allows creating of vectors in two ways, row or
+                    column vectors. Unlike some programming languages, arrays and vectors in MATLAB <b>do not</b> start
+                    at 0.</p>
+            </div>
+            <div class="videoContainer">
+                <div class="video">
+                    <!--Cloudinary Embed -->
+                    <video controls width="100%"
+                        src="https://res.cloudinary.com/dvv0os7ft/video/upload/e_volume:-80/v1629063502/Survivor_Game_Changers_-_Tony_Voted_Out_ql3uf7.mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="explanation">
+                <h2>Row Vectors</h2>
+                <p><b>Row vectors</b> are created by surrounding the set of numbers in <b>square brackets</b>, using
+                    <b>spaces or commas</b> to define each of the elements.
+                </p>
+                <pre>x = [1, 2, 3, 4, 5]</pre>
+            </div>
+            <div class="explanation">
+                <h2>Column Vectors</h2>
+                <p>
+                <p><b>Row vectors</b> are created by surrounding the set of numbers in <b>square brackets</b>, using
+                    <b>semicolons</b>> to define each of the elements.
+                </p>
+                </p>
+                <pre>x = [1; 2; 3; 4; 5]</pre>
+            </div>
+            <div class="explanation">
+                <h2>Referancing elements</h2>
+                <p>You can obtain specific elements within a vector or array in multiple ways, by specifing a location
+                    within the vector, a range or the entire vector.</p>
+                <p>The i<sup>th</sup> component of a vector v is referred as v(i).</p>
+                <pre>
+x = [5, 6, 7, 8, 9]
+x(3)
+ans = 7</pre>
+                <p>In this example the 3rd element of the vector has been specified and in this case, is 7</p>
+                <p>A <b>range</b> within the vector can also be used to identify elements.</p>
+                <pre>
+x = [5, 6, 7, 8, 9]
+sub_x = x(2:4)</pre>
+                <pre>
+sub_x = 
+    6 7 8</pre>
+            </div>
+            <div class="explanation">
+                <h2><b>Vector Manipulation</b></h2>
+                <h2>Addition and Subtraction</h2>
+                <p>You can <b>add or subtract</b> two vectors together. Both the vectors must be of same type (row
+                    and row, column and column) and contain same number of elements.</p>
+                <pre>
+x = [1, 2, 3, 4, 5]
+y = [4, 7, 12, 6, 9]
+z = x + y 
+disp(z)</pre>
+                <p>Adding these two vectors together will produce the following result:</p>
+                <pre>
+5 9 15 10 14
+</pre>
+                <h2>Appending Vectors</h2>
+                <p>MATLAB has the power to allow two vectors, of the same length and type, to be put together to
+                    create a new one.</p>
+                <p>Two <b>row vectors</b> can be appended with:</p>
+                <pre>r = [r1,r2]</pre>
+                <p>Two <b>column vectors</b> can be appended with:</p>
+                <pre>c = [c1;c2]</pre>
+                <p>This example shows two row vectors appended together to create a new vector r</p>
+                <pre>
+r1 = [1, 2, 3, 4];
+r2 = [5, 6, 7, 8];
+r = [r1,r2];
+disp(r)</pre>
+                <pre>
+r = 1 2 3 4 5 6 7 8</pre>
+                <h2>Dot Product</h2>
+                <p>The dot product of two vectors, again of equal length and format, can be calcultaed using the
+                    <b>dot</b> function
+                </p>
+
+                <pre>
+v1 = [1, 2, 3, 4];
+v2 = [5, 6, 7, 8];
+dp = dot(v1, v2);
+disp(dp);</pre>
+                <pre>
+dp = 70</pre>
+            </div>
+            <div class="buttons">
+                <a href="" class="previous">❮ Previous</a>
+                <a href="" class="next">Next ❯</a>
+            </div>
+            <div id="spacer">
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+    </div>
+</body>
+
+<script>
+    $(function () {
+        $("#title").load("../../components/title.html");
+    });
+
+    $(function () {
+        $("#horinavbar").load("../../components/horinavbar.html");
+    });
+
+    $(function () {
+        $("#vertnavbar").load("../../components/matlabnavbar.html");
+    });
+
+    $(function () {
+        $("#footer").load("../../components/footer.html");
+    });
+</script>
