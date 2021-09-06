@@ -1,24 +1,24 @@
 #ContentDivide{
   height: auto;
 }
-@media only screen and (max-device-width : 480px) {
+@media only screen and (max-device-width : 600px) {
 .content{
-margin-left: 0;
-margin-right: 0;
+  margin-left: 0 !important;
+  margin-right: 0;
   }
 }
 
 .content {
-    margin-left: 25%;
-    padding-left: 10px;
-    margin-bottom: 1%;
-    /*padding-bottom: 1%;*/
-    margin-right: 20%; 
-    padding-right: 10px; 
-    box-shadow: 0px 4px 15px 1px #888888;
-    overflow-x: auto;
-    height: 100%;
-  }
+  margin-left: 25%;
+  padding-left: 10px;
+  margin-bottom: 1%;
+  /*padding-bottom: 1%;*/
+  margin-right: 20%; 
+  padding-right: 10px; 
+  box-shadow: 0px 4px 15px 1px #888888;
+  overflow-x: auto;
+  height: 100%;
+}
 
 #spacer{
   padding-top: 1%;
