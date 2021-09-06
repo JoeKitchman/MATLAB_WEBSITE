@@ -1,12 +1,6 @@
 #ContentDivide{
   height: auto;
 }
-@media only screen and (max-width: 375px) {
-  /* For mobile phones: */
-  [class*="content"] {
-    margin-right: 0px !important;
-  }
-}
 
 .content {
   margin-left: 25%;
@@ -19,6 +13,14 @@
   overflow-x: auto;
   height: 100%;
 }
+
+@media only screen and (max-width: 400px) {
+  /* For mobile phones: */
+  .content {
+    margin-right: 0px !important;
+  }
+}
+
 
 #spacer{
   padding-top: 1%;
