@@ -27,7 +27,7 @@
                 <a href="" class="next">Next ❯</a>
             </div>
             <div class="intro">
-                <p>There may be occasions where you need to excicute a section of code multiple times. This is done
+                <p>There may be occasions where you need to execute a section of code multiple times. This is done
                     though creating a loop.</p>
                 <p>There are three types of loops: <b>While Loop</b>, <b>For Loop</b> and <b>Nested loops</b>.</p>
             </div>
@@ -41,13 +41,14 @@
             </div>
             <div class="explanation">
                 <h2>While Loop</h2>
-                These loops continue to excecute the code inside of it while a set condition is met.
+                These loops continue to execute the code inside of it while a set condition is met.
                 <pre>a = 10;                
 while( a < 20 )
     fprintf('value of a: %d\n', a);
     a = a + 1;
 end</pre>
-                Here the code will print out the alue of a while a is smaller than 20, preducing the following result -
+                Here the code will print out the value of a, while a is smaller than 20, producing the following result
+                -
                 <pre>
 value of a: 10
 value of a: 11
@@ -62,7 +63,7 @@ value of a: 19</pre>
             </div>
             <div class="explanation">
                 <h2>For Loop</h2>
-                These loops excecute code for a pre determined amount of time or steps.
+                These loops execute code for a pre determined amount of time or steps.
                 There are three conditions that can be set -
                 <ul>
                     <li><b>[initial value:end value]</b></li>
@@ -70,9 +71,8 @@ value of a: 19</pre>
 for a = 10:20
     fprintf('value of a: %d\n', a);
 end </pre>
-                    <p>This incriemnts the variable by 1 from initial value to end value, ending when the varable a is
-                        greater
-                        than endval. Therefore this displays every value between 10 and 20, inclusive.</p>
+                    <p>This increments the variable by 1 from initial value to end value, ending when the variable a is
+                        greater than end value. Therefore this displays every value between 10 and 20, inclusive.</p>
                     <pre>
 value of a: 10
 value of a: 11
@@ -88,7 +88,7 @@ value of a: 20 </pre>
 for a = 10: 2: 20
     disp(a)
 end</pre>
-                    <p>This is the same as rhe previous loop, but you can specify how much to incriment by each time. In
+                    <p>This is the same as rhe previous loop, but you can specify how much to increment by each time. In
                         this example, the value grows by 2 each time. This value can also be negative. The outcome of
                         this loop would be -</p>
                     <pre>
@@ -103,7 +103,7 @@ value of a: 20 </pre>
 for a = [24,18,17,23,28]
     a*2
 end</pre>
-                    <p>This loop cycles through all items within an array, excecuting the code with the value set to
+                    <p>This loop cycles through all items within an array, executing the code with the value set to
                         that variable. This example would produce all items within the array, but times by 2. To display
                         the values in the array, use the <b>disp</b> operator</p>
                     <pre>
@@ -118,7 +118,7 @@ ans = 56</pre>
             <div class="explanation">
                 <h2>Nested Loop</h2>
                 Nested loops are simply loops within other loops, with each expression being the conditions that must be
-                met, such as a while or for loop, and the statment is the code that will be excecuted.
+                met, such as a while or for loop, and the statement is the code that will be executed.
                 <pre>
 while [expression1]
     for [expression2]
