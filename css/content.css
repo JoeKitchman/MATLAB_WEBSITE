@@ -1,10 +1,10 @@
 #ContentDivide{
   height: auto;
 }
-@media only screen and (max-device-width : 600px) {
-.content{
-  margin-left: 0 !important;
-  margin-right: 0;
+@media only screen and (max-width: 840px) {
+  /* For mobile phones: */
+  [class*="content"] {
+    margin-right: 0px !important;
   }
 }
 
