@@ -63,13 +63,13 @@
     text-decoration: none;
   }
 
-
 .intro{ 
     border-radius: 10px;
     margin-top: 1%;
     background-color: #edf5e1;
     padding:6px;
 }
+
 .videoContainer{
   margin-top: 1%;
 }
@@ -77,6 +77,14 @@
 .videoContainer .video{
     width: 40%;
     padding-left: 30%;
+}
+
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  .videoContainer .video {
+    width: 100% !important;
+    padding-left: 0px !important;
+  }
 }
 
 .explanation{ 
