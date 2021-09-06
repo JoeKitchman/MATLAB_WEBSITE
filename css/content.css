@@ -1,6 +1,13 @@
 #ContentDivide{
   height: auto;
 }
+@media only screen and (max-device-width : 480px) {
+.content{
+margin-left: 0;
+margin-right: 0;
+  }
+}
+
 .content {
     margin-left: 25%;
     padding-left: 10px;
