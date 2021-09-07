@@ -20,17 +20,22 @@
             <div id="spacer">
             </div>
             <div class="pagetitle">
-                <h1>MATLAB - Scripts</h1>
+                <h1>MATLAB - Scripts & Functions</h1>
             </div>
             <div class="buttons">
                 <a href="" class="previous">❮ Previous</a>
                 <a href="" class="next">Next ❯</a>
             </div>
             <div class="intro">
-                <p>Although code can be directly input into the Command Window in MATLAB, this is not the best practice,
-                    as code can easily be lost and the window become cluttered. Scrips however, allow you to save
-                    sections of code to load them again later. This makes it easier to manage your code, and dynamically
-                    make and test changes.</p>
+                <p>Although code can be directly input into the Command Window in MATLAB, this is not the best practice
+                    in some instances,
+                    as code can easily be lost and the window become cluttered. <b>Scrips</b> allow you to save
+                    sections of code to load them again later. This makes it easier to manage your code, and recall this
+                    section of code when needed, especially if it is required often.</p>
+                <p><b>Functions</b> are even more powerful than that as they allow you to input values into a
+                    mathematical
+                    problem. This avoid the issues of having to manually change the value of a script when you need a
+                    new calculation</p>
             </div>
             <div class="videoContainer">
                 <div class="video">
@@ -41,7 +46,46 @@
                 </div>
             </div>
             <div class="explanation">
-                <p></p>
+                <p>When a script or function has been saved, it can be recalled again by typing the name of the script
+                    within the
+                    Command Window or clicking the run button on the toolbar.</p>
+                <p>In the below examples, scripts and functions are demonstrated with the problem of calculating the
+                    area of a triangle.</p>
+            </div>
+            <div class="explanation">
+                <h2>Script</h2>
+                <p>Scripts store commands exactly as you would type them at the command line in the command window.
+                    Adding this section of code to a script will calculate the area of a triangle with a base length of
+                    5 and a height of 3:</p>
+                <pre>
+b = 5;
+h = 3;
+a = 0.5*(b*h)</pre>
+                <p>After saving the file as "triarea", you can call the script from the command line:</p>
+                <pre>triarea</pre>
+                <pre>
+a = 
+    7.5000
+</pre>
+                <p>The main downside to a script is you <b>can not</b> change the values without <b>manually editing</b>
+                    it. This is where functions become more valuable.</p>
+            </div>
+            <div class="explanation">
+                <h2>Function</h2>
+                <p>Functions are much more flexible, allowing you to input values dynamically. Taking the script used
+                    above, you can turn it into a function very easily:</p>
+                <pre>
+<c style="color: blue;">function</c> a = triarea(b,h)
+a = 0.5*(b*h);
+<c c style="color: blue;">end</c></pre>
+                <p>Calling the function in the command window as you would use any other function, will run the function
+                    with the inserted values:</p>
+                <pre>
+a = triarea(5,3)</pre>
+                <p>This then produces the following result:</p>
+                <pre>
+a = 
+    7.5000</pre>
             </div>
             <div class="buttons">
                 <a href="" class="previous">❮ Previous</a>
