@@ -1,0 +1,140 @@
+<head>
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/title.css">
+    <link rel="stylesheet" type="text/css" href="../../css/horinavbar.css">
+    <link rel="stylesheet" type="text/css" href="../../css/matlabvertnav.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/content.css">
+    <link rel="stylesheet" type="text/css" href="../../css/footer.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    <div id="title">
+    </div>
+    <div id="horinavbar">
+    </div>
+    <div id="ContentDivide">
+        <div id="vertnavbar">
+        </div>
+        <div class="content">
+            <div id="spacer">
+            </div>
+            <div class="pagetitle">
+                <h1>MATLAB - Arrays</h1>
+            </div>
+            <div class="buttons">
+                <a href="" class="previous">❮ Previous</a>
+                <a href="" class="next">Next ❯</a>
+            </div>
+            <div class="intro">
+                <p>As previously mentioned a vector is a one-dimensional array and a matrix is a two-dimensional array.
+                    However, there are more multidimensional arrays and array tricks that can be ultilised in MATLAB.
+                </p>
+            </div>
+            <div class="videoContainer">
+                <div class="video">
+                    <!--Cloudinary Embed -->
+                    <video controls width="100%"
+                        src="https://res.cloudinary.com/dvv0os7ft/video/upload/e_volume:-80/v1629063502/Survivor_Game_Changers_-_Tony_Voted_Out_ql3uf7.mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="explanation">
+                <h2>Zeros & Ones</h2>
+                <p>The <b>zeros()</b> function simply creates an array of all zeros, with the number in brackets
+                    specifying the size.:</p>
+                <pre>
+zeros(3)
+
+ans =
+      0     0     0     
+      0     0     0     
+      0     0     0     
+                </pre>
+                <p>The <b>ones()</b> function simply creates an array of all ones:</p>
+                <pre>
+ones(3,2)
+
+ans =
+      1     1          
+      1     1          
+      1     1     
+                </pre>
+                <p>The <b>eye()</b> function simply creates an identity (Symmetrical) array:</p>
+                <pre>
+eye(3)
+
+ans =
+      1     0     0        
+      0     1     0    
+      0     0     1
+                </pre>
+                <p>The <b>rand()</b> function simply creates an array of random numbers between zero and one:</p>
+                <pre>
+rand(3)
+
+ans =
+      0.8147    0.9134    0.2785
+      0.9058    0.6324    0.5469
+      0.1270    0.0975    0.9575
+                </pre>
+            </div>
+            <div class="explanation">
+                <h2>Multidimensional Arrays</h2>
+                <p>Multidimensional arrays in MATLAB are an extension of the normal two-dimensional matrix.
+                    To generate a multidimensional array, we first create a two-dimensional array and extend it. A
+                    multidimensional array is effectively an <b>array on top of another array</b>.</p>
+                <p>First create a two-dimensional array, a matrix:</p>
+                <pre>
+a = [1, 2, 3; 4, 5, 6; 7, 8, 9]</pre>
+                <P>Doing the following will add another dimension to the array:</P>
+                <pre>
+a(:, :, 2)= [ 1 2 3; 4 5 6; 7 8 9]
+
+a =
+ans(:,:,1) =
+
+   0   0   0
+   0   0   0
+   0   0   0
+
+ans(:,:,2) =
+
+   1   2   3
+   4   5   6
+   7   8   9</pre>
+                <p>The first layer of the array is empty but the second is what contains the information provided.</p>
+            </div>
+            <div class="explanation">
+                <h2></h2>
+                <p></p>
+            </div>
+            <div class="buttons">
+                <a href="" class="previous">❮ Previous</a>
+                <a href="" class="next">Next ❯</a>
+            </div>
+            <div id="spacer">
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+    </div>
+</body>
+
+<script>
+    $(function () {
+        $("#title").load("../../components/title.html");
+    });
+
+    $(function () {
+        $("#horinavbar").load("../../components/horinavbar.html");
+    });
+
+    $(function () {
+        $("#vertnavbar").load("../../components/matlabnavbar.html");
+    });
+
+    $(function () {
+        $("#footer").load("../../components/footer.html");
+    });
+</script>
