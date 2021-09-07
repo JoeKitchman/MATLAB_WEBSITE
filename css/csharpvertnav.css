@@ -24,7 +24,8 @@
   .list .main a {
     color: #EDF5E1;
     font-size: 24px;
-    padding: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     text-decoration:underline;
     font-weight: bold;
     display: block;
