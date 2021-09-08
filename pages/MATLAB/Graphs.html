@@ -24,21 +24,27 @@
                 <h1>MATLAB - Graphs</h1>
             </div>
             <div class="buttons">
-                <a href="" class="previous">❮ Previous</a>
-                <a href="" class="next">Next ❯</a>
+                <a href="Arrays.html" class="previous">❮ Previous</a>
             </div>
             <div class="intro">
-                <p>MATLAB has the tools to plot all different forms of graphs. When executing a script that contains
+                <p>MATLAB has the tools to plot all different forms of graphs, both 2D and 3D. When executing a script
+                    that contains
                     code to generate a graph, it will load into a separate window and not the command window. From here
-                    the graph can be edited, such as adding keys and changing the scale, and provides the ability to
-                    export the graph. There are many graphs you can create, 2d and 3d, as well as designing them to fit
-                    you needs.</p>
+                    the graph can be edited, such as adding keys and changing the scale. </p>
+                <p>This tutorial contains:</p>
+                <ui>
+                    <li>Line Plot</li>
+                    <li>Sin, Cos & Tan</li>
+                    <li>Customising</li>
+                    <li>3D Graphs</li>
+                </ui>
             </div>
             <div class="videoContainer">
                 <div class="video">
                     <!--Cloudinary Embed -->
                     <video controls width="100%"
-                        src="https://res.cloudinary.com/dvv0os7ft/video/upload/e_volume:-80/v1629063502/Survivor_Game_Changers_-_Tony_Voted_Out_ql3uf7.mp4">
+                        src="https://res.cloudinary.com/dvv0os7ft/video/upload/v1631105939/MTALABGraphs_arf6f8.mp4"
+                        poster="../../assets/Thumbnails/MATLAB_Graphs.png"></video>>
                     </video>
                 </div>
             </div>
@@ -52,6 +58,15 @@ plot(x, y)</pre>
                 <p>This graph has a range of x values from 0 to 100, with an increment of 5. This will produce the
                     following graph:</p>
                 <pre><img src="../../assets/xyPlot.PNG"></pre>
+                <p>To achieve a curved graph you can also use the exponential function, <b>exp()</b>. </p>
+                <pre>
+X = -2:0.5:10;
+Y = exp(X/2);
+plot(X,Y)</pre>
+                <p>This graph has a range of x values from -2 to 10, the y value is the exponential of the x valued
+                    divided by 2, with an increment of 0.5. This will produce the
+                    following graph:</p>
+                <pre><img src="../../assets/curvePlot.PNG"></pre>
             </div>
             <div class="explanation">
                 <h2>Sin, Cos & Tan</h2>
@@ -101,8 +116,7 @@ surf(x, y, z)</pre>
                 <pre><img src="../../assets/3dPlot.PNG"></pre>
             </div>
             <div class="buttons">
-                <a href="" class="previous">❮ Previous</a>
-                <a href="" class="next">Next ❯</a>
+                <a href="Arrays.html" class="previous">❮ Previous</a>
             </div>
             <div id="spacer">
             </div>
