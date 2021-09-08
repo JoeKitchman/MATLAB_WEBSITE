@@ -36,12 +36,41 @@
                 <div class="video">
                     <!--Cloudinary Embed -->
                     <video controls width="100%"
-                        src="https://res.cloudinary.com/dvv0os7ft/video/upload/e_volume:-80/v1629063502/Survivor_Game_Changers_-_Tony_Voted_Out_ql3uf7.mp4">
+                        src="https://res.cloudinary.com/dvv0os7ft/video/upload/v1631061221/MATLABArrays_xx2pjy.mp4"
+                        poster="../../assets/Thumbnails/MATLAB_Array.png">
                     </video>
                 </div>
             </div>
             <div class="explanation">
-                <h2>Zeros & Ones</h2>
+                <h2>Multidimensional Arrays</h2>
+                <p>Multidimensional arrays in MATLAB are an extension of the normal two-dimensional matrix.
+                    To generate a multidimensional array, we first create a two-dimensional array and extend it. A
+                    multidimensional array is effectively an <b>array on top of another array</b>.</p>
+                <p>First create a two-dimensional array, a matrix:</p>
+                <pre>
+a = [1, 2, 3; 4, 5, 6; 7, 8, 9]</pre>
+                <P>Doing the following will add another dimension to the array:</P>
+                <pre>
+a(:, :, 2)= [ 1 2 3; 4 5 6; 7 8 9]
+
+a =
+ans(:,:,1) =
+
+   0   0   0
+   0   0   0
+   0   0   0
+
+ans(:,:,2) =
+
+   1   2   3
+   4   5   6
+   7   8   9</pre>
+                <p>The first layer of the array is empty, but the second is what contains the information provided, as
+                    indicated by the 2 in the function before the array. These arrays can be any number of dimensions
+                    large and are not just limited to 2.</p>
+            </div>
+            <div class="explanation">
+                <h2>Array Function Tricks</h2>
                 <p>The <b>zeros()</b> function simply creates an array of all zeros, with the number in brackets
                     specifying the size.:</p>
                 <pre>
@@ -79,36 +108,6 @@ ans =
       0.9058    0.6324    0.5469
       0.1270    0.0975    0.9575
                 </pre>
-            </div>
-            <div class="explanation">
-                <h2>Multidimensional Arrays</h2>
-                <p>Multidimensional arrays in MATLAB are an extension of the normal two-dimensional matrix.
-                    To generate a multidimensional array, we first create a two-dimensional array and extend it. A
-                    multidimensional array is effectively an <b>array on top of another array</b>.</p>
-                <p>First create a two-dimensional array, a matrix:</p>
-                <pre>
-a = [1, 2, 3; 4, 5, 6; 7, 8, 9]</pre>
-                <P>Doing the following will add another dimension to the array:</P>
-                <pre>
-a(:, :, 2)= [ 1 2 3; 4 5 6; 7 8 9]
-
-a =
-ans(:,:,1) =
-
-   0   0   0
-   0   0   0
-   0   0   0
-
-ans(:,:,2) =
-
-   1   2   3
-   4   5   6
-   7   8   9</pre>
-                <p>The first layer of the array is empty but the second is what contains the information provided.</p>
-            </div>
-            <div class="explanation">
-                <h2></h2>
-                <p></p>
             </div>
             <div class="buttons">
                 <a href="" class="previous">❮ Previous</a>
