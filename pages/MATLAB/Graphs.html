@@ -1,0 +1,131 @@
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/title.css">
+    <link rel="stylesheet" type="text/css" href="../../css/horinavbar.css">
+    <link rel="stylesheet" type="text/css" href="../../css/matlabvertnav.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/content.css">
+    <link rel="stylesheet" type="text/css" href="../../css/footer.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    <div id="title">
+    </div>
+    <div id="horinavbar">
+    </div>
+    <div id="ContentDivide">
+        <div id="vertnavbar">
+        </div>
+        <div class="content">
+            <div id="spacer">
+            </div>
+            <div class="pagetitle">
+                <h1>MATLAB - Graphs</h1>
+            </div>
+            <div class="buttons">
+                <a href="" class="previous">❮ Previous</a>
+                <a href="" class="next">Next ❯</a>
+            </div>
+            <div class="intro">
+                <p>MATLAB has the tools to plot all different forms of graphs. When executing a script that contains
+                    code to generate a graph, it will load into a separate window and not the command window. From here
+                    the graph can be edited, such as adding keys and changing the scale, and provides the ability to
+                    export the graph. There are many graphs you can create, 2d and 3d, as well as designing them to fit
+                    you needs.</p>
+            </div>
+            <div class="videoContainer">
+                <div class="video">
+                    <!--Cloudinary Embed -->
+                    <video controls width="100%"
+                        src="https://res.cloudinary.com/dvv0os7ft/video/upload/e_volume:-80/v1629063502/Survivor_Game_Changers_-_Tony_Voted_Out_ql3uf7.mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="explanation">
+                <h2>Line Plot</h2>
+                <p>A simple y = x<sub>2</sub> graph can be denoted with the following script:</p>
+                <pre>
+x = [0:5:100];
+y = x;
+plot(x, y)</pre>
+                <p>This graph has a range of x values from 0 to 100, with an increment of 5. This will produce the
+                    following graph:</p>
+                <pre><img src="../../assets/xyPlot.PNG"></pre>
+            </div>
+            <div class="explanation">
+                <h2>Sin, Cos & Tan</h2>
+                <p>Typical mathematical notations associated with graphs can be used in MATLAB such as sin. The function
+                    <b>sin()</b> is used to generate sin graphs.
+                </p>
+                <pre>
+x = [0:0.01:10];
+y = sin(x);
+plot(x, y), grid on, axis equal</pre>
+                <p>This will produce a simple sin graph.</p>
+                <pre><img src="../../assets/sinPlot.PNG"></pre>
+            </div>
+            <div class="explanation">
+                <h2>Customising</h2>
+                <p>There are several functions that can be used to make you graphs look more presentable.</p>
+                <ul>
+                    <li>
+                        <p>The <b>xlabel</b> and <b>ylabel</b> functions generate labels along the respective axis.</p>
+                    </li>
+                    <il>
+                        <p>The <b>title</b> function puts a title on the graph.</p>
+                    </il>
+                    <li>
+                        <p>The <b>grid on</b> function puts grid lines on the graph.</p>
+                    </li>
+                    <li>
+                        <p>The <b>axis equal</b> function generates the plot with the same scale factors and the spaces
+                            on both axes.</p>
+                    </li>
+                </ul>
+                <p>Below is the same sin graph as before with several of these functions used. The axis equal function
+                    makes the biggest difference here, producing a more standard looking sin graph.</p>
+                <pre>
+x = [0:0.01:10];
+y = sin(x);
+plot(x, y), xlabel('x'), ylabel('Sin(x)'), title('Sin(x) Graph'), grid on, axis equal</pre>
+                <pre><img src="../../assets/sinPlotAxis.PNG"></pre>
+            </div>
+            <div class="explanation">
+                <h2>3D Graphs</h2>
+                <p>Using the <b>meshgrid()</b> and <b>surf() </b>functions, you can create 3D graphs.</p>
+                <pre>
+[x,y] = meshgrid(-2:.2:2);
+z = x .* exp(-x.^2 - y.^2);
+surf(x, y, z)</pre>
+                <pre><img src="../../assets/3dPlot.PNG"></pre>
+            </div>
+            <div class="buttons">
+                <a href="" class="previous">❮ Previous</a>
+                <a href="" class="next">Next ❯</a>
+            </div>
+            <div id="spacer">
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+    </div>
+</body>
+
+<script>
+    $(function () {
+        $("#title").load("../../components/title.html");
+    });
+
+    $(function () {
+        $("#horinavbar").load("../../components/horinavbar.html");
+    });
+
+    $(function () {
+        $("#vertnavbar").load("../../components/matlabnavbar.html");
+    });
+
+    $(function () {
+        $("#footer").load("../../components/footer.html");
+    });
+</script>
